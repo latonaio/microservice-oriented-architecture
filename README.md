@@ -23,7 +23,7 @@ AIONにおけるマイクロサービスアーキテクチャは、Kubernetes / 
 実際にエッジコンピューティング環境（NVIDIA Jetson NX or Xavier）において AION / Kubernetes上に各マイクロサービスのPodを立ち上げ運用すると、以下のようになります。
 ```
 rabbitmq-on-kubernetes-7f9fbfc8d6-xl7qs                     1/1   Running  0   4d11h
-aion-kanban-replicator-78867bdbfc-5pgr7          　　　     2/2   Running  0   4d11h
+aion-kanban-replicator-78867bdbfc-5pgr7          　　　      2/2   Running  0   4d11h
 aion-statuskanban-7bb486b86f-2d8zl                          2/2   Running  0   4d11h
 aion-servicebroker-75cf6cf747-dx7gl                         2/2   Running  0   4d11h
 aion-sendanything-656676dd9-4cg9b                           2/2   Running  0   4d11h
