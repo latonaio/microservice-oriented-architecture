@@ -12,7 +12,7 @@ AIONにおけるマイクロサービスアーキテクチャは、Kubernetes / 
 
 ## Kubernetes の Pods を マイクロサービスメッシュにした 新生アーキテクチャの概念 
 AIONでは、Kubernetes Pods と Aion-Core の Service Broker をコアとして、洗練された新生のマイクロサービスメッシュアーキテクチャが実現されています。    
-aion-core-manifestsや、aion-service-definitions等により、洗練されたフォーマット定義で標準化されたマイクロサービスの定義ファイルが設定され、複雑なアプリケーション環境においても、ソースコードの開発、デプロイ、メンテナンスを簡単に行うことができます。
+[aion-core-manifests](https://github.com/latonaio/aion-core-manifests)や、[aion-service-definitions](https://github.com/latonaio/aion-service-definitions)等により、洗練されたフォーマット定義で標準化されたマイクロサービスの定義ファイルが設定され、複雑なアプリケーション環境においても、ソースコードの開発、デプロイ、メンテナンスを簡単に行うことができます。
 
 ### 今までの Kubernetes による マイクロサービスメッシュアーキテクチャ  
 ![K8s](docs/k8s_before.png)   
@@ -35,7 +35,7 @@ Kubernetes に加えてAION のアーキテクチャを実装することによ�
 ![マイクロサービスアーキテクチャ](docs/microservice_architectural_concept_AION.png)    
 
 ## AIONにおけるマイクロサービスアーキテクチャの例（エッジアプリケーション OMOTE-Bako のアーキテクチャ） 
-以下のアーキテクチャ図において、それぞれのレポジトリ名(例：service-broker, [rabbitmq-on-kubernetes](https://github.com/latonaio/rabbitmq-on-kubernetes), [redis-cluster-kube](https://github.com/latonaio/redis-cluster-kube), [mysql-kube](https://github.com/latonaio/mysql-kube), [data-sweeper-kube](https://github.com/latonaio/data-sweeper-kube), [ui-frontend-for-omotebako](https://github.com/latonaio/ui-frontend-for-omotebako), ui-backend-for-omotebako, [load-balancer-for-movable-devices](https://github.com/latonaio/load-balancer-for-movable-devices), [azure-face-api-identifier-kube](https://github.com/latonaio/azure-face-api-identifier-kube)), で表現された単位が、マイクロサービスの単位です。  
+以下のアーキテクチャ図において、それぞれのレポジトリ名(例：[service-broker](https://github.com/latonaio/aion-core#Service-Broker), [rabbitmq-on-kubernetes](https://github.com/latonaio/rabbitmq-on-kubernetes), [redis-cluster-kube](https://github.com/latonaio/redis-cluster-kube), [mysql-kube](https://github.com/latonaio/mysql-kube), [data-sweeper-kube](https://github.com/latonaio/data-sweeper-kube), [ui-frontend-for-omotebako](https://github.com/latonaio/ui-frontend-for-omotebako), ui-backend-for-omotebako, [load-balancer-for-movable-devices](https://github.com/latonaio/load-balancer-for-movable-devices), [azure-face-api-identifier-kube](https://github.com/latonaio/azure-face-api-identifier-kube)), で表現された単位が、マイクロサービスの単位です。  
 このように、各マイクロサービスはコンテナ化され独立して動作しており、コンテナオーケストレーションシステムのKubernetesによって制御・監視されています。  
 なお、各マイクロサービス間は疎結合しており、メッセージングアーキテクチャのコアであるRabbitMQ等によってマイクロサービス間のやりとりが行われています。
 ![マイクロサービスアーキテクチャ](docs/omotebako_architecture_20211016.drawio.png)   
