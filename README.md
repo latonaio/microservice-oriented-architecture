@@ -14,9 +14,21 @@ AIONにおけるマイクロサービスアーキテクチャは、Kubernetes / 
 AIONでは、Kubernetes Pods と Aion-Core の Service Broker をコアとして、洗練された新生のマイクロサービスメッシュアーキテクチャが実現されています。    
 aion-core-manifestsや、aion-service-definitions等により、洗練されたフォーマット定義で標準化されたマイクロサービスの定義ファイルが設定され、複雑なアプリケーション環境においても、ソースコードの開発、デプロイ、メンテナンスを簡単に行うことができます。
 
-### 今までの Kubernetes による マイクロサービスメッシュアーキテクチャ
+### 今までの Kubernetes による マイクロサービスメッシュアーキテクチャ  
 ![K8s](docs/k8s_before.png)   
-### AION と Kubernetes を組み合わせた 新しいマイクロサービスメッシュアーキテクチャ
+### AION と Kubernetes を組み合わせた 新しいマイクロサービスメッシュアーキテクチャ  
+Kubernetes に加えてAION のアーキテクチャを実装することにより、次の機能・環境が付加されます。 
+
+* Service Brokerage （主に Service Broker による機能）
+
+* Microservice Mesh （Kubernetesだけでは制御/管理/維持が非効率な Micoservice Mesh の機能）
+
+* Micro-Messaging Tools (Service Broker と RabbitMQ の組み合わせによる Microservice Level の メッセージングツール）
+
+* Stabilization of Complex Microservicized Architecture (複雑なマイクロサービスアーキテクチャでも安定化する機能）
+
+* Dedicated to Edge Computing Environment (エッジコンピューティング環境に最適化 ※クラウド環境でも適用可能）
+
 ![k8s](docs/k8s_after.png)  
 
 ## AIONにおけるマイクロサービスアーキテクチャコンセプト   
