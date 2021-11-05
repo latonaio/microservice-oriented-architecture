@@ -6,7 +6,7 @@ microservice-oriented-architecture は、マイクロサービスアーキテク
 マイクロサービスアーキテクチャでは、個々のマイクロサービスは他のマイクロサービスに依存せず起動でき、独立してデプロイやアップデートが可能なため、スケーラビリティや可搬性に優れています。   
 
 ## AIONにおけるマイクロサービスアーキテクチャ  
-AIONにおけるマイクロサービスアーキテクチャは、Kubernetes / Docker / Aion-Core をベースとした包括的なマイクロサービス環境だけでなく、RabbitMQ、Redis、Envoy、ReactJS、MongoDB、MySQL 等の周辺リソースの技術とフレームワークをフル活用した、360°マイクロサービスアーキテクチャの環境を採用しています。   
+AIONにおけるマイクロサービスアーキテクチャは、Kubernetes / Docker / Aion-Core をベースとした包括的なマイクロサービス環境だけでなく、RabbitMQ、Fluentd、Redis、Envoy、ReactJS、MongoDB、MySQL 等の周辺リソースの技術とフレームワークをフル活用した、360°マイクロサービスアーキテクチャの環境を採用しています。   
 これにより、大きな単位のサービス管理だけでなく、真に細かく刻まれたレベルにおいてのマイクロサービスの開発実行環境を実現することが可能です。  
 また、これらのマイクロサービス環境は、他の全てのコンポーネントやマイクロサービスと、疎結合できるように設計されています。  
 
@@ -48,7 +48,7 @@ aion-kanban-replicator-78867bdbfc-5pgr7          　　　      2/2   Running  0
 aion-statuskanban-7bb486b86f-2d8zl                          2/2   Running  0   4d11h
 aion-servicebroker-75cf6cf747-dx7gl                         2/2   Running  0   4d11h
 aion-sendanything-656676dd9-4cg9b                           2/2   Running  0   4d11h
-fluentd-2rj8b                                               1/1   Running  0   4d11h
+fluentd-for-containers-mongodb-kube-2rj8b                   1/1   Running  0   4d11h
 redis-cluster-7f5654dfd8-d6ng4                              1/1   Running  0   4d11h
 mongodb-kube-67d94f5d9f-8rwxg                               1/1   Running  0   4d11h
 mysql-kube-59c84c6655-n7xgr                                 1/1   Running  0   4d6h
