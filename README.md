@@ -32,7 +32,7 @@ Kubernetes に加えてAION のアーキテクチャを実装することによ�
 ![k8s](docs/k8s_after.png)  
 
 ## AIONにおけるマイクロサービスアーキテクチャコンセプト   
-![マイクロサービスアーキテクチャ](docs/microservice_architectural_concept_AION.png)    
+![マイクロサービスアーキテクチャ](docs/omotebako_architecture_20211104.drawio.png)    
 
 ## AIONにおけるマイクロサービスアーキテクチャの例（エッジアプリケーション OMOTE-Bako のアーキテクチャ） 
 以下のアーキテクチャ図において、それぞれのレポジトリ名(例：[service-broker](https://github.com/latonaio/aion-core/tree/main/cmd/service-broker), [rabbitmq-on-kubernetes](https://github.com/latonaio/rabbitmq-on-kubernetes), [redis-cluster-kube](https://github.com/latonaio/redis-cluster-kube), [mysql-kube](https://github.com/latonaio/mysql-kube), [data-sweeper-kube](https://github.com/latonaio/data-sweeper-kube), [ui-frontend-for-omotebako](https://github.com/latonaio/ui-frontend-for-omotebako), ui-backend-for-omotebako, [load-balancer-for-movable-devices](https://github.com/latonaio/load-balancer-for-movable-devices), [azure-face-api-identifier-kube](https://github.com/latonaio/azure-face-api-identifier-kube)), で表現された単位が、マイクロサービスの単位です。  
