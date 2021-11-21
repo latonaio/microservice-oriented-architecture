@@ -41,7 +41,7 @@ Kubernetes に加えてAION のアーキテクチャを実装することによ�
 ![マイクロサービスアーキテクチャ](docs/omotebako_architecture_20211104.drawio.png)   
 
 ## エッジコンピューティング環境における AION / Kubernetes 上の Pods 立ち上げ例（エッジアプリケーション OMOTE-Bako の場合） 
-実際にエッジコンピューティング環境（NVIDIA Jetson Xavier or NX）において AION / Kubernetes上に各マイクロサービスのPodを立ち上げ運用すると、以下のようになります。
+実際にエッジコンピューティング環境（NVIDIA Jetson Xavier or NX, RP4 8GB Model 等）において AION / Kubernetes上に各マイクロサービスのPodを立ち上げ運用すると、以下のようになります。
 ```
 rabbitmq-on-kubernetes-7f9fbfc8d6-xl7qs                     1/1   Running  0   4d11h
 aion-kanban-replicator-78867bdbfc-5pgr7          　　　      2/2   Running  0   4d11h
